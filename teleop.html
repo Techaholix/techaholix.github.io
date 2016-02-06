@@ -38,23 +38,51 @@ if (floorgoal === "1") {
 
 //Robot parked on the mountain and touching the floor
 var robotparked = prompt("Was the robot parked on the mountain and touching the floor?\n 1 for yes and 0 for no")
-robotparkedscore = (robotparked * 5)
-confirm(robotparkedscore)
+if (robotparked === "1") {
+	var robotparkedscore = (robotparked * 5)
+	confirm(robotparkedscore)
+} if (robotparked === "0") {
+	var robotparkedscorezero = (robotparked * 5)
+	confirm(robotparkedscorezero)
+	var robotparkedlow = prompt("Was the robot parked on the mountain low zone\n 1 for yes and 0 for no")
+} if (robotparkedlow === "1") {
+	var robotparkedlowscore = (robotparkedlow * 10)
+	confirm(robotparkedlowscore)
+} if (robotparkedlow === "0") {
+	var robotparkedlowscorezero = (robotparkedlow * 10)
+	confirm(robotparkedlowscorezero)
+	var robotparkedmid = prompt("Was the robot parked on the mountain mid zone\n 1 for yes and 0 for no")
+} if (robotparkedmid === "1") {
+	var robotparkedmidscore = (robotparkedmid * 20)
+	confirm(robotparkedmidscore)
+} if (robotparkedmid === "0") {
+	var robotparkedmidscorezero = (robotparkedmid * 20)
+	confirm(robotparkedmidscorezero)
+	var robotparkedhigh = prompt("Was the robot parked on the mountain high zone\n 1 for yes and 0 for no")
+} if (robotparkedhigh === "1") {
+	var robotparkedhighscore = (robotparkedhigh * 40)
+	confirm(robotparkedhighscore)
+} if (robotparkedhigh === "0") {
+	var robotparkedhighscorezero = (robotparkedhigh * 40)
+	confirm(robotparkedhighscorezero)
+	
+}
+
 
 //Robot parked on the mountain low zone
-var robotparkedlow = prompt("Was the robot parked on the mountain low zone\n 1 for yes and 0 for no")
-robotparkedlowscore = (robotparkedlow * 10)
-confirm(robotparkedlowscore)
+//var robotparkedlow = prompt("Was the robot parked on the mountain low zone\n 1 for yes and 0 for no")
+//robotparkedlowscore = (robotparkedlow * 10)
+//confirm(robotparkedlowscore)
 
 //Robot parked on the mountain mid zone
-var robotparkedmid = prompt("Was the robot parked on the mountain mid zone\n 1 for yes and 0 for no")
-var robotparkedmidscore = (robotparkedmid * 20)
-confirm(robotparkedmidscore)
+//var robotparkedmid = prompt("Was the robot parked on the mountain mid zone\n 1 for yes and 0 for no")
+//var robotparkedmidscore = (robotparkedmid * 20)
+//confirm(robotparkedmidscore)
 
 //Robot parked on the mountain high zone
-var robotparkedhigh = prompt("Was the robot parked on the mountain high zone\n 1 for yes and 0 for no")
-var robotparkedhighscore = (robotparkedhigh * 40)
-confirm(robotparkedhighscore)
+//var robotparkedhigh = prompt("Was the robot parked on the mountain high zone\n 1 for yes and 0 for no")
+//var robotparkedhighscore = (robotparkedhigh * 40)
+//confirm(robotparkedhighscore)
 
 //Climbers released/slid down the zip line
 var climberszip = prompt("How many climbers were released")
@@ -77,7 +105,8 @@ var endgamesignalscore = (endgamesignal * 20 )
 confirm(endgamesignalscore)
 
 //total score
-var totalscore = (lowscore + midscore + highscore + floorscore + robotparkedscore + robotparkedlowscore + robotparkedmidscore + robotparkedhighscore + climberszipscore + climbershelterscore + endgamehangscore + endgamesignalscore)
+var totalscore = (lowscore + midscore + highscore + floorscore + robotparkedscore + robotparkedscorezero + robotparkedlowscore + robotparkedlowscorezero + robotparkedmidscore + robotparkedmidscorezero + robotparkedhighscore + robotparkedhighscorezero + climberszipscore + climbershelterscore + endgamehangscore + endgamesignalscore)
+//console.log("Total score test")
 confirm(totalscore)
 
 
