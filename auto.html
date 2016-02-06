@@ -5,56 +5,42 @@
 
 //Robot parked in a rescue becon repair zone
 var rbrz = prompt("Was the robot parked in a rescue becon repair zone")
-if (rbrz === "y"){
-	confirm("5")
-} if (rbrz === "n") {
-	confirm("no")
-}
+var rbrzscore = (rbrz * 5)
+confirm(rbrzscore)
 
 //Robot parked in a floor goal
 var rpfg = prompt("Was the robot parked in a floor goal")
-if (rpfg === "y") {
-	confirm("5")
-} if (rpfg === "n") {
-	confirm("no")
-}
+var rpfgscore = (rpfg * 5)
+confirm(rpfgscore)
 
 //Robot on the mountian and toucing the floor
 var romttf = prompt("Was the robot on the mountain and touching the floor")
-if (romttf === "y") {
-	confirm("5")
-} if (romttf === "n") {
-	confirm("no")
-}
+var romttfscore = (romttf * 5)
+confirm(romttfscore)
 
 //Robot parked on the mountain low zone
 var rmlz = prompt("Was the robot parked on the mountain low zone")
-if (rmlz === "y") {
-	confirm("10")
-} if (rmlz === "n") {
-	confirm("no")
-}
+var rmlzscore = (rmlz * 10)
+confirm(rmlzscore)
 
 //Robot parked on the mountain mid zone
 var rmmz = prompt("Was the moutain parked on the mountain mid zone")
-if (rmmz === "y") {
-	confirm("20")
-} if (rmmz === "n") {
-	confirm("no")
-}
+var rmmzscore = (20)
+confirm(rmmzscore)
 
 //Robot parked on the mountain high zone
-var rmhz = prompt("Was the robot parked on the mountain high zone")
-if (rmhz === "y") {
-	confirm("40")
-} if (rmhz === "n") {
-	confirm("no")
-}
+var rmhz = prompt("Was the robot parked on the mountain high zone/\nType 1 for yes and 0 for no")
+var rmhzscore = (rmhz * 40)
+confirm(rmhzscore)
 
 //Climbers in shelter
 var cis = prompt("How many climbers were in the shelter")
 var cis_score = (cis * 10)
 confirm(cis_score)
+
+//total score
+totalscore = (rbrzscore + rpfgscore + romttfscore + rmlzscore + rmmzscore + rmhzscore + cis_score)
+confirm(totalscore)
 
 </script>
 </body>
