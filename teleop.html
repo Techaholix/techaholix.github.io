@@ -5,69 +5,56 @@
 
 
 //Score in low zone
-var lowzone = prompt("Did they score in the low zone?")
-if (lowzone === "y") {
+var lowzone = prompt("Did they score in the low zone?\n 1 for yes and 0 for no")
+if (lowzone === "1") {
 	var debrislow = prompt("How many derbis did they score in the low zone")
 	var lowscore = (debrislow * 5)
 	confirm(lowscore)
 }
 
 //score in medium zone
-var midzone = prompt("Did they score in the mid zone")
-if (midzone === "y") {
+var midzone = prompt("Did they score in the mid zone\n 1 for yes and 0 for no")
+if (midzone === "1") {
 	var debrismid = prompt("How many debris did they score in the mid zone")
 	var midscore = (debrismid * 10 )
 	confirm(midscore)
 }
 
 //Score in High zone
-var highzone = prompt("Did they score in the highzone")
-
-if (highzone === "y") {
+var highzone = prompt("Did they score in the highzone\n 1 for yes and 0 for no")
+if (highzone === "1") {
 	var debrishigh = prompt("How many debris did they score in the high zone")
 	var highscore = (debrishigh * 15)
 	confirm(highscore)
 }
 
 //Score in floor goal
-var floorgoal = prompt("Did they score in the floor goal?")
-if (floorgoal === "y") {
+var floorgoal = prompt("Did they score in the floor goal?\n 1 for yes and 0 for no")
+if (floorgoal === "1") {
 	var floordebris = prompt("How many debris did they score in the floor goal")
 	var floorscore = (floordebris * 1)
 	confirm(floorscore)
 }
 
 //Robot parked on the mountain and touching the floor
-var robotparked = prompt("Was the robot parked on the mountain and touching the floor?")
-if (robotparked === "y") {
-	confirm("5")
-} if (robotparked === "n") {
-
-}
+var robotparked = prompt("Was the robot parked on the mountain and touching the floor?\n 1 for yes and 0 for no")
+robotparkedscore = (robotparked * 5)
+confirm(robotparkedscore)
 
 //Robot parked on the mountain low zone
-var robotparkedlow = prompt("Was the robot parked on the mountain low zone")
-if (robotparkedlow === "y") {
-	confirm("10")
-} if (robotparkedlow === "n") {
-
-}
+var robotparkedlow = prompt("Was the robot parked on the mountain low zone\n 1 for yes and 0 for no")
+robotparkedlowscore = (robotparkedlow * 10)
+confirm(robotparkedlowscore)
 
 //Robot parked on the mountain mid zone
-var robotparkedmid = prompt("Was the robot parked on the mountain mid zone")
-if (robotparkedmid === "y") {
-	confirm("20")
-} if (robotparkedmid === "n") {
-
-}
+var robotparkedmid = prompt("Was the robot parked on the mountain mid zone\n 1 for yes and 0 for no")
+var robotparkedmidscore = (robotparkedmid * 20)
+confirm(robotparkedmidscore)
 
 //Robot parked on the mountain high zone
-var robotparkedhigh = prompt("Was the robot parked on the mountain high zone")
-if (robotparkedhigh === "y") {
-	confirm("40")
-} if (robotparkedhigh === "n") {
-
-}
+var robotparkedhigh = prompt("Was the robot parked on the mountain high zone\n 1 for yes and 0 for no")
+var robotparkedhighscore = (robotparkedhigh * 40)
+confirm(robotparkedhighscore)
 
 //Climbers released/slid down the zip line
 var climberszip = prompt("How many climbers were released")
@@ -80,20 +67,18 @@ var climbershelterscore = (climbershelter * 10)
 confirm(climbershelterscore)
 
 //End game hang
-var endgamehang = prompt("Was the robot able to hang on the pull up bar")
-if (endgamehang === "y") {
-	confirm("80")
-}
+var endgamehang = prompt("Was the robot able to hang on the pull up bar\n 1 for yes and 0 for no")
+var endgamehangscore = (endgamehang * 80)
+confirm(endgamehangscore)
 
 //End game signal
-var endgamesignal = prompt("Did the robot claim an all clear signal")
-if (endgamesignal === "y") {
-	confirm("20")
-} if (endgamesignal === "n") {
+var endgamesignal = prompt("Did the robot claim an all clear signal\n 1 for yes and 0 for no")
+var endgamesignalscore = (endgamesignal * 20 )
+confirm(endgamesignalscore)
 
-}
-
-
+//total score
+var totalscore = (lowscore + midscore + highscore + floorscore + robotparkedscore + robotparkedlowscore + robotparkedmidscore + robotparkedhighscore + climberszipscore + climbershelterscore + endgamehangscore + endgamesignalscore)
+confirm(totalscore)
 
 
 
